@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lato&display=swap');
+
+body {
+	background-color: #d9cdf7;
+    font-family: 'Lato', sans-serif;
+    color: #271A45;
+}
+
+h1 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: bold;
+    line-height: 32px;
+    
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    opacity: 60%;
+}
+
+h6 {
+    font-weight: 300;
+    opacity: 50%;
+}
+
+#image {
+	position: relative;
+	top: 200px;
+}
+
+#description {
+	position: relative;
+	top: 200px;
+}
+
+#text {
+	position: relative;
+	top: 50px;
+}
+
+img {
+	position: relative;
+	left: 150px;
+}
+
+#add-button {
+	padding: 15px 30px;
+	border-radius: 999px;
+	background-color: #d9cdf7;
+}
+
+#add-button:hover {
+    color: whitesmoke;
+    background-color: #8679a7;
+    transition-duration: 0.7s;
+}
+
+#button-div {
+	position: absolute;
+	display: inline-block;
+	left: 350px;
+	bottom: 200px;
+	z-index: 1;
+	/* background-color: red; */
+	padding: 30px;
+}
+
+
+#button-div:hover {
+	cursor: pointer;
+
+	transition-duration: 2s;
+}
