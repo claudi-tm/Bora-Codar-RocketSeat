@@ -1,0 +1,136 @@
+:root {
+	--reveiver-color: #633bbc;
+	--sender-color: #07847e;
+	--body-background: #1a1924;
+	--input-color: #282843;
+	--text-color: #e1e1e6;
+	--message-padding: 0.875rem;
+	--width-for-desktop: 55rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--body-background);
+	color: var(--text-color);
+}
+
+img {
+	width: 48px;
+	border-radius: 50%;
+}
+
+.input {
+	border-radius: 62.43rem;
+	width: 19.43rem;
+	height: 3.25rem;
+	padding: 0rem 1rem;
+	resize: none;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.input:focus {
+	color: aqua;
+	border: 1px solid black;
+}
+
+/* Classes */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profile {
+	display: inherit;
+	align-items: center;
+}
+
+.data {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.status {
+	display: block;
+}
+
+.content {
+	margin: auto;
+	padding: 1.5rem 2rem;
+	width: 19.43rem;
+}
+
+.sender {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.receiver-text {
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+
+	padding: var(--message-padding);
+	width: fit-content;
+	background-color: var(--reveiver-color);
+}
+
+.sender-text {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	padding: var(--message-padding);
+	width: fit-content;
+	background-color: var(--sender-color);
+}
+
+.chat-component {
+	margin-bottom: 1.875rem;
+}
+
+.time {
+	text-align: center;
+}
+
+.send-text {
+	display: flex;
+	border-radius: 62.43rem;
+	width: 19.43rem;
+	height: 3.25rem;
+	padding: 0rem 1rem;
+	resize: none;
+	flex-direction: row;
+	background-color: var(--input-color);
+	align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.content {
+		margin: auto;
+		padding: 1.5rem 2rem;
+		width:var(--width-for-desktop);
+	}
+
+	.send-text {
+		width: var(--width-for-desktop);
+	}
+
+	.input {
+	border-radius: 62.43rem;
+	width: var(--width-for-desktop);
+	height: 3.25rem;
+	padding: 0rem 1rem;
+	resize: none;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+}
