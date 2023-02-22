@@ -2,6 +2,9 @@
   "name": "boracodar-desafio7",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://https://claudi-tm.github.io/Bora-Codar-RocketSeat",
+  "predeploy" : "npm run build",
+  "deploy" : "gh-pages -d build",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,6 +23,7 @@
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
