@@ -1,12 +1,17 @@
 import Form from "react-bootstrap/Form";
+import { InputText } from "./InputText";
+import { SearchButton } from "./SearchButton";
+import { Select } from "./Select";
 
 export function SearchBar() {
 	return (
-		<Form.Select aria-label="Default select example">
-			<option>Open this select menu</option>
-			<option value="1">One</option>
-			<option value="2">Two</option>
-			<option value="3">Three</option>
-		</Form.Select>
+		<div
+			className="search_bar d-flex p-5 gap-3"
+			style={{ backgroundColor: "rgba(255, 255, 255, 1)", width:"993px" }}
+		>
+			<InputText></InputText>
+			<Select></Select>
+			<SearchButton></SearchButton>
+		</div>
 	);
 }

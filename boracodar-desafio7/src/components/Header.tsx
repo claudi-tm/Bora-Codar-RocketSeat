@@ -20,17 +20,19 @@ export function Header() {
 				style={{
 					color: "#E45858",
 					position: "relative",
-					top: "12rem",
+					top: "8rem",
 				}}
 			>
 				Find your block
 			</h3>
-			<h1 style={{ position: "relative", top: "15rem" }}>
-				Encontre os
-				<span style={{ color: "#6246EA" }}>melhores blocos</span> <br />
+			<h1 style={{ position: "relative", top: "9rem" }}>
+				Encontre os 
+				<span style={{ color: "#6246EA" }}> melhores blocos</span> <br />
 				de carnaval de 2023
 			</h1>
-			<SearchBar></SearchBar>
+			<div className="search_bar rounded" style={{position: "relative", top: "9rem", left: "17rem"}}>
+				<SearchBar></SearchBar>
+			</div>
 			<img
 				style={{ position: "absolute", top: "13.5rem", right: "0rem" }}
 				src="/src/assets/ilustra-02.svg"
